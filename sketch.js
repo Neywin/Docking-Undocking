@@ -41,23 +41,23 @@ function draw() {
       spaceCraft.addImage(spaceCraftImg3);
     }
   
-    else if(keyDown(RIGHT_ARROW)){
+   if(keyDown(RIGHT_ARROW)){
   
       spaceCraft.x = spaceCraft.x + 5;
       spaceCraft.addImage(spaceCraftImg4);
     }
   
-    else if(keyDown(UP_ARROW)){
+   if(keyDown(UP_ARROW)){
   
       spaceCraft.y = spaceCraft.y - 5;
       spaceCraft.addImage(spaceCraftImg1);
     }
-    else if(keyDown(DOWN_ARROW)){
+    
+   if(keyDown(DOWN_ARROW)){
   
       spaceCraft.addImage(spaceCraftImg2);
     }
     
-    // I'm having issues with this right now, HELP!!!
     if(spaceCraft.y <= (iss.y+70) && spaceCraft.x <= (iss.x-10)){
       hasDocked = true;
       textSize(25);
